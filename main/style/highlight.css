@@ -8,7 +8,7 @@
     color: #ffffff;
     box-shadow: 0 20px 50px rgba(184, 184, 184, 0.4);
 
-    background-image: url('assets/banner.svg');
+    background-image: url('../assets/banner.svg');
     background-size: cover;
     /* cobre toda a área */
     background-position: center;
