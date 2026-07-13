@@ -1,0 +1,366 @@
+/* ===== SEÇÃO DESTAQUE – ESTILO TRY IT NOW! ===== */
+.feature-highlight {
+    position: relative;
+    margin: 4rem auto;
+    padding: 4rem 3.5rem;
+    overflow: hidden;
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+    color: #ffffff;
+    box-shadow: 0 20px 50px rgba(184, 184, 184, 0.4);
+
+    background-image: url('/main/assets/banner.svg');
+    background-size: cover;
+    /* cobre toda a área */
+    background-position: center;
+    /* centraliza a imagem */
+    background-repeat: no-repeat;
+    /* não repete */
+    background-blend-mode: overlay;
+    /* mistura com a cor de fundo */
+    background-color: #9796f8;
+
+}
+
+/* ===== FUNDO ===== */
+.highlight-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.15;
+}
+
+.circle-1 {
+    width: 350px;
+    height: 350px;
+    top: -120px;
+    right: -80px;
+    background: radial-gradient(circle, #f6ad55, transparent 70%);
+}
+
+.circle-2 {
+    width: 250px;
+    height: 250px;
+    bottom: -80px;
+    left: -60px;
+    background: radial-gradient(circle, #9b59b6, transparent 70%);
+}
+
+.circle-3 {
+    width: 150px;
+    height: 150px;
+    top: 40%;
+    left: 30%;
+    background: radial-gradient(circle, #55c7b8, transparent 70%);
+}
+
+.bg-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* ===== CONTEÚDO ===== */
+.highlight-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* BADGE */
+.highlight-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    padding: 0.4rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* TÍTULO */
+.highlight-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 2rem 0;
+}
+
+.highlight-title span {
+    font-weight: 700;
+    color: #f6ad55;
+}
+
+/* MÉTRICAS */
+.highlight-metrics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.metric-item {
+    text-align: center;
+}
+
+.metric-number {
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+}
+
+.metric-label {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.metric-divider {
+    width: 2px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* DESCRIÇÃO */
+.highlight-description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 2rem auto;
+}
+
+.highlight-description strong {
+    color: #f6ad55;
+    font-weight: 600;
+}
+
+/* DESTAQUE COM ÍCONE */
+.highlight-feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(4px);
+    padding: 0.8rem 2rem;
+    border-radius: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    max-width: 400px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.feature-icon-box {
+    background: rgba(246, 173, 85, 0.2);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.feature-icon {
+    font-size: 1.8rem;
+}
+
+.feature-text {
+    text-align: left;
+}
+
+.feature-text h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    color: #ffffff;
+}
+
+.feature-text p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+/* CTA */
+.highlight-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 1rem 3.5rem;
+    border-radius: 50px;
+    background: #f6ad55;
+    color: #0a1628;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(246, 173, 85, 0.3);
+}
+
+.btn-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(246, 173, 85, 0.4);
+}
+
+.cta-reviews {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.stars {
+    color: #f6ad55;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 992px) {
+    .feature-highlight {
+        padding: 3rem 2rem;
+        margin: 3rem auto;
+    }
+
+    .highlight-title {
+        font-size: 2.8rem;
+    }
+
+    .metric-number {
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-highlight {
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+        margin: 2rem auto;
+    }
+
+    .highlight-title {
+        font-size: 2.2rem;
+    }
+
+    .highlight-title span {
+        display: inline;
+    }
+
+    .highlight-metrics {
+        gap: 1.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .metric-number {
+        font-size: 2.2rem;
+    }
+
+    .metric-label {
+        font-size: 0.85rem;
+    }
+
+    .metric-divider {
+        height: 40px;
+    }
+
+    .highlight-description {
+        font-size: 1rem;
+    }
+
+    .highlight-feature {
+        padding: 0.6rem 1.5rem;
+    }
+
+    .btn-cta {
+        padding: 0.8rem 2.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-highlight {
+        padding: 1.5rem 1rem;
+    }
+
+    .highlight-badge {
+        font-size: 0.7rem;
+        padding: 0.3rem 1rem;
+    }
+
+    .highlight-title {
+        font-size: 1.8rem;
+    }
+
+    .highlight-metrics {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .metric-divider {
+        display: none;
+    }
+
+    .metric-number {
+        font-size: 2rem;
+    }
+
+    .highlight-feature {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 16px;
+        max-width: 100%;
+    }
+
+    .feature-text {
+        text-align: center;
+    }
+
+    .btn-cta {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .cta-reviews {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .bg-circle {
+        display: none;
+    }
+}
