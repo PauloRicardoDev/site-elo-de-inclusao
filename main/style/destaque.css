@@ -1,0 +1,145 @@
+/* ===== VÍDEO INSTITUCIONAL ===== */
+.video-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    /* padding: 0 2rem;*/
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+
+.video-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.video-header h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.video-header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    background: #f8fafc;
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-description {
+    padding: 0 0.5rem;
+}
+
+.video-description h3 {
+    font-size: 1.8rem;
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.video-description p {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.video-description ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.8rem 0;
+}
+
+.video-description ul li {
+    padding: 0.4rem 0;
+    font-size: 1rem;
+    color: #1e293b;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.video-description ul li:last-child {
+    border-bottom: none;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #1a56db;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(26, 86, 219, 0.3);
+}
+
+.cta-button:hover {
+    background: #0f3b8c;
+    transform: scale(1.03);
+}
+
+@media (max-width: 992px) {
+    .video-container {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .video-description {
+        padding: 0;
+        text-align: center;
+    }
+
+    .video-description ul {
+        text-align: left;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 600px) {
+    .video-section {
+        padding: 0 1rem;
+    }
+
+    .video-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .video-container {
+        padding: 1rem;
+    }
+
+    .video-description h3 {
+        font-size: 1.4rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
