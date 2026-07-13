@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/highlight.css">
     <link rel="stylesheet" href="style/destaque.css">
+    <link rel="stylesheet" href="style/eventos_anteriores.css">
     <link rel="stylesheet" href="style/carrossel.css">
     <link rel="stylesheet" href="style/locais.css">
 
@@ -60,8 +61,7 @@
 
     <main>
 
-
-        <!-- ========== SEÇÃO DESTAQUE – ESTILO TRY IT NOW! ========== -->
+        <!-- ========== SEÇÃO DESTAQUE ========== -->
         <section class="feature-highlight">
 
             <div style="padding: 2rem;">
@@ -166,82 +166,7 @@
             </div>
         </section>
 
-
-        <!--
-         <section class="features" id="features">
-            <h2>Escolas Perto de Você</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Alta Performance</h3>
-                    <p>Soluções otimizadas para máxima eficiência e velocidade</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Segurança Total</h3>
-                    <p>Proteção de dados com criptografia de ponta a ponta</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Responsivo</h3>
-                    <p>Design adaptável para todos os dispositivos e telas</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💡</div>
-                    <h3>Inovação</h3>
-                    <p>Tecnologias modernas e atualizadas constantemente</p>
-                </div>
-            </div>
-        </section>
-        -->
-
-        <section class="features" id="features">
-            <h2>Conheça nossas unidades</h2>
-
-            <div class="features-grid">
-
-                <!-- Card 1: Unidade Centro -->
-                <a href="unidade-centro.html" class="feature-card"
-                    style="text-decoration: none; color: inherit; display: block;">
-                    <div class="feature-icon">🏛️</div>
-                    <h3>Unidade Centro</h3>
-                    <p>Estrutura completa e equipe especializada em TEA. Ambiente adaptado para acolher crianças de 6 a
-                        10 anos com segurança e afeto.</p>
-                </a>
-
-                <!-- Card 2: Unidade Vila Mariana -->
-                <a href="unidade-vila-mariana.html" class="feature-card"
-                    style="text-decoration: none; color: inherit; display: block;">
-                    <div class="feature-icon">🌳</div>
-                    <h3>Unidade Vila Mariana</h3>
-                    <p>Espaço amplo e arejado, com salas sensoriais e metodologia adaptativa que respeita o ritmo de
-                        cada aluno neuroatípico.</p>
-                </a>
-
-                <!-- Card 3: Unidade Tatuapé -->
-                <a href="unidade-tatuape.html" class="feature-card"
-                    style="text-decoration: none; color: inherit; display: block;">
-                    <div class="feature-icon">🧩</div>
-                    <h3>Unidade Tatuapé</h3>
-                    <p>Foco no desenvolvimento emocional e pedagógico. Aqui, a inclusão é real, com projetos
-                        personalizados para cada criança.</p>
-                </a>
-
-                <!-- Card 4: Unidade Barra -->
-                <a href="unidade-barra.html" class="feature-card"
-                    style="text-decoration: none; color: inherit; display: block;">
-                    <div class="feature-icon">⭐</div>
-                    <h3>Unidade Barra</h3>
-                    <p>Excelência em ensino humanizado. Corpo docente capacitado para transformar desafios em conquistas
-                        diárias.</p>
-                </a>
-
-            </div>
-        </section>
-
-        <!---->
-
-        <!-- ========== CARROSSEL DE EVENTOS (SEM JS) ========== -->
+        <!-- ========== CARROSSEL DE EVENTOS  ========== -->
         <section class="events-carousel">
             <div class="events-header">
                 <h2>📅 Próximos Eventos</h2>
@@ -328,7 +253,69 @@
             </div>
         </section>
 
-        <!---->
+        <!-- ========== EVENTOS ANTERIORES ========== -->
+        <section class="encontros-carousel-container">
+            <h2 class="section-title">Encontros Anteriores</h2>
+            <p class="section-subtitle">Relembre momentos marcantes e o que os participantes disseram</p>
+
+            <div class="carousel-wrapper">
+                <!-- Apenas a viewport e track, sem setas -->
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Cards gerados pelo JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navegação exclusiva por dots -->
+            <div class="dots-container" id="dotsContainer"></div>
+        </section>
+
+        <!-- ========== SEÇÃO UNIDADES ========== -->
+        <section class="features" id="features">
+            <h2>Conheça nossas unidades</h2>
+
+            <div class="features-grid">
+
+                <!-- Card 1: Unidade Centro -->
+                <a href="unidade-centro.html" class="feature-card"
+                    style="text-decoration: none; color: inherit; display: block;">
+                    <div class="feature-icon">🏛️</div>
+                    <h3>Unidade Centro</h3>
+                    <p>Estrutura completa e equipe especializada em TEA. Ambiente adaptado para acolher crianças de 6 a
+                        10 anos com segurança e afeto.</p>
+                </a>
+
+                <!-- Card 2: Unidade Vila Mariana -->
+                <a href="unidade-vila-mariana.html" class="feature-card"
+                    style="text-decoration: none; color: inherit; display: block;">
+                    <div class="feature-icon">🌳</div>
+                    <h3>Unidade Vila Mariana</h3>
+                    <p>Espaço amplo e arejado, com salas sensoriais e metodologia adaptativa que respeita o ritmo de
+                        cada aluno neuroatípico.</p>
+                </a>
+
+                <!-- Card 3: Unidade Tatuapé -->
+                <a href="unidade-tatuape.html" class="feature-card"
+                    style="text-decoration: none; color: inherit; display: block;">
+                    <div class="feature-icon">🧩</div>
+                    <h3>Unidade Tatuapé</h3>
+                    <p>Foco no desenvolvimento emocional e pedagógico. Aqui, a inclusão é real, com projetos
+                        personalizados para cada criança.</p>
+                </a>
+
+                <!-- Card 4: Unidade Barra -->
+                <a href="unidade-barra.html" class="feature-card"
+                    style="text-decoration: none; color: inherit; display: block;">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Unidade Barra</h3>
+                    <p>Excelência em ensino humanizado. Corpo docente capacitado para transformar desafios em conquistas
+                        diárias.</p>
+                </a>
+
+            </div>
+        </section>
+
         <!-- ========== SEÇÃO MAPA – UNIDADES EM BELÉM (PA) ========== -->
         <section class="map-section" id="map">
             <div class="map-header">
@@ -446,7 +433,8 @@
     </footer>
 
     <!--Scripts-->
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/eventos_anteriores.js"></script>
 </body>
 
 </html>
