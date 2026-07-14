@@ -485,6 +485,10 @@ nav {
     }
 }
 
+.links {
+    padding-top: 3rem;
+}
+
 /* Animações */
 @keyframes fadeInUp {
     from {
