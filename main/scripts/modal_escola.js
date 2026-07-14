@@ -2,19 +2,19 @@
 const unidadesData = {
     centro: {
         nome: 'Unidade Centro',
-        imagem: 'https://placehold.co/600x400/2563eb/white?text=Unidade+Centro'
+        imagem: './assets/escola1.svg'
     },
     tenone: {
         nome: 'Unidade Tenoné',
-        imagem: 'https://placehold.co/600x400/10b981/white?text=Unidade+Tenoné'
+        imagem: './assets/escola2.svg'
     },
     tapana: {
         nome: 'Unidade Tapanã',
-        imagem: 'https://placehold.co/600x400/f59e0b/white?text=Unidade+Tapanã'
+        imagem: './assets/escola3.svg'
     },
     icoaraci: {
         nome: 'Unidade Icoaraci',
-        imagem: 'https://placehold.co/600x400/8b5cf6/white?text=Unidade+Icoaraci'
+        imagem: './assets/escola4.svg'
     }
 };
 
