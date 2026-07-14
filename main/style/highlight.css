@@ -21,6 +21,17 @@
 
 }
 
+.tag-escola {
+    font-size: .6rem;
+    color: #ffffff63;
+    border-radius: 50px;
+    border: 2px solid #cbd9ff92;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 300px;
+    text-align: center;
+}
+
 /* ===== FUNDO ===== */
 .highlight-bg {
     position: absolute;
