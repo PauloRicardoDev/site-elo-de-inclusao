@@ -1,54 +1,102 @@
 // Dados dos encontros (os mesmos, você pode personalizar)
 const encontros = [
     {
-        id: 1,
-        imagem: "https://picsum.photos/seed/encontro1/400/300",
-        data: "15 de Março, 2026",
-        titulo: "Workshop de Design Thinking",
-        depoimento: "O encontro superou minhas expectativas! As dinâmicas práticas e o networking fizeram toda a diferença.",
-        participante: {
-            nome: "Marina Silva",
-            cargo: "UX Designer",
-            foto: "https://i.pravatar.cc/150?img=1"
+        "id": 1,
+        "imagem": "https://picsum.photos/seed/tea1/400/300",
+        "data": "15 de Agosto, 2026",
+        "titulo": "Palestra: Entendendo o TEA",
+        "depoimento": "A palestra foi transformadora! Finalmente entendi como ajudar meu filho em casa. A psicopedagoga explicou de forma tão clara e acolhedora.",
+        "participante": {
+            "nome": "Juliana Andrade",
+            "cargo": "Mãe do Miguel (2º ano)",
+            "foto": "https://i.pravatar.cc/150?img=10"
         }
     },
     {
-        id: 2,
-        imagem: "https://picsum.photos/seed/encontro2/400/300",
-        data: "22 de Abril, 2026",
-        titulo: "Tech Talks: Inovação e IA",
-        depoimento: "Conteúdo de altíssimo nível. Saí com muitas ideias para aplicar na empresa. Já quero a próxima edição!",
-        participante: {
-            nome: "Carlos Mendes",
-            cargo: "CTO",
-            foto: "https://i.pravatar.cc/150?img=3"
+        "id": 2,
+        "imagem": "https://picsum.photos/seed/tea2/400/300",
+        "data": "15 de Agosto, 2026",
+        "titulo": "Palestra: Entendendo o TEA",
+        "depoimento": "Saí da palestra com ferramentas práticas para usar na sala de aula. A abordagem sobre comunicação não violenta foi um divisor de águas.",
+        "participante": {
+            "nome": "Prof. Ricardo Lins",
+            "cargo": "Professor do 4º ano",
+            "foto": "https://i.pravatar.cc/150?img=12"
         }
     },
     {
-        id: 3,
-        imagem: "https://picsum.photos/seed/encontro3/400/300",
-        data: "10 de Maio, 2026",
-        titulo: "Hackathon Social",
-        depoimento: "Foi incrível ver tantas soluções criativas surgindo em apenas 48h. O espírito colaborativo foi o ponto alto.",
-        participante: {
-            nome: "Ana Beatriz",
-            cargo: "Desenvolvedora Full Stack",
-            foto: "https://i.pravatar.cc/150?img=5"
+        "id": 3,
+        "imagem": "https://picsum.photos/seed/artes1/400/300",
+        "data": "22 de Agosto, 2026",
+        "titulo": "Oficina de Artes Sensoriais",
+        "depoimento": "Meu filho é autista e se encantou com as texturas e cores. A equipe soube acolher as necessidades dele com muito carinho. Foi emocionante!",
+        "participante": {
+            "nome": "Fernanda Costa",
+            "cargo": "Pai do Gabriel (1º ano)",
+            "foto": "https://i.pravatar.cc/150?img=14"
         }
     },
     {
-        id: 4,
-        imagem: "https://picsum.photos/seed/encontro4/400/300",
-        data: "05 de Junho, 2026",
-        titulo: "Meetup de Empreendedorismo",
-        depoimento: "As mentorias individuais me ajudaram a pivotar meu negócio. Conheci pessoas que viraram parceiras de projeto.",
-        participante: {
-            nome: "Rafael Costa",
-            cargo: "Fundador da Startup X",
-            foto: "https://i.pravatar.cc/150?img=7"
+        "id": 4,
+        "imagem": "https://picsum.photos/seed/artes2/400/300",
+        "data": "22 de Agosto, 2026",
+        "titulo": "Oficina de Artes Sensoriais",
+        "depoimento": "Eu nunca tinha visto minha filha tão focada. Ela amou pintar com as mãos e experimentar os sons. Já estamos ansiosos pela próxima!",
+        "participante": {
+            "nome": "Patrícia Mello",
+            "cargo": "Mãe da Sofia (3º ano)",
+            "foto": "https://i.pravatar.cc/150?img=16"
+        }
+    },
+    {
+        "id": 5,
+        "imagem": "https://picsum.photos/seed/piquenique1/400/300",
+        "data": "05 de Setembro, 2026",
+        "titulo": "Piquenique da Família C.E.C.S.",
+        "depoimento": "Foi lindo ver todas as famílias reunidas, sem pressa, num ambiente tão acolhedor. Me senti parte de uma comunidade de verdade.",
+        "participante": {
+            "nome": "Roberta Nunes",
+            "cargo": "Mãe do Lucas (2º ano)",
+            "foto": "https://i.pravatar.cc/150?img=18"
+        }
+    },
+    {
+        "id": 6,
+        "imagem": "https://picsum.photos/seed/piquenique2/400/300",
+        "data": "05 de Setembro, 2026",
+        "titulo": "Piquenique da Família C.E.C.S.",
+        "depoimento": "O piquenique foi um momento especial de integração. Meu marido, que trabalha muito, pôde participar e ficou encantado com a escola.",
+        "participante": {
+            "nome": "Camila Rocha",
+            "cargo": "Mãe do Enzo (1º ano)",
+            "foto": "https://i.pravatar.cc/150?img=19"
+        }
+    },
+    {
+        "id": 7,
+        "imagem": "https://picsum.photos/seed/talentos1/400/300",
+        "data": "12 de Setembro, 2026",
+        "titulo": "Mostra de Talentos Inclusiva",
+        "depoimento": "Chorei de emoção ao ver minha filha no palco. A inclusão realmente acontece aqui. Ela se apresentou com tanta confiança!",
+        "participante": {
+            "nome": "Andréa Dantas",
+            "cargo": "Mãe da Manuela (5º ano)",
+            "foto": "https://i.pravatar.cc/150?img=20"
+        }
+    },
+    {
+        "id": 8,
+        "imagem": "https://picsum.photos/seed/talentos2/400/300",
+        "data": "12 de Setembro, 2026",
+        "titulo": "Mostra de Talentos Inclusiva",
+        "depoimento": "Ver cada aluno brilhar do seu jeito foi a prova de que a escola respeita a neurodiversidade. Saí de lá renovado como professor.",
+        "participante": {
+            "nome": "Prof. Marcos Vinícius",
+            "cargo": "Professor de Música",
+            "foto": "https://i.pravatar.cc/150?img=22"
         }
     }
-];
+]
 
 // Elementos do DOM
 const track = document.getElementById('carouselTrack');
