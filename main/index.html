@@ -18,6 +18,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <!--TRANSIÇÂO-->
+    <!-- CSS da AOS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -62,13 +66,13 @@
     <main>
 
         <!-- ========== SEÇÃO DESTAQUE ========== -->
-        <section class="feature-highlight">
+        <section data-aos="fade-up" class="feature-highlight">
 
-            <div style="padding: 2rem;">
+            <div data-aos="fade-up" style="padding: 2rem;">
                 <h1 style="color: #ffffff;">Escola destaque do Mês</h1>
             </div>
 
-            <section>
+            <section data-aos="fade-up">
                 <!-- Fundo com formas -->
                 <div class="highlight-bg">
                     <div class="bg-circle circle-1"></div>
@@ -133,13 +137,13 @@
         </section>
 
         <!-- ========== SEÇÃO VÍDEO INSTITUCIONAL ========== -->
-        <section class="video-section" id="video">
-            <div class="video-header">
+        <section data-aos="fade-up" class="video-section" id="video">
+            <div data-aos="fade-up" class="video-header">
                 <h2>🎥 Conheça o C.E.C.S. em ação</h2>
                 <p>Assista ao nosso vídeo institucional e veja como acolhemos e desenvolvemos o potencial de cada
                     criança</p>
             </div>
-            <div class="video-container">
+            <div data-aos="fade-up" class="video-container">
                 <div class="video-wrapper">
                     <!-- Substitua o src pelo link do seu vídeo (YouTube ou Vimeo) -->
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/cZ2ls6ragag?si=DC9MlJuqVTCpHtCR"
@@ -167,8 +171,8 @@
         </section>
 
         <!-- ========== CARROSSEL DE EVENTOS  ========== -->
-        <section class="events-carousel">
-            <div class="events-header">
+        <section data-aos="fade-up" class="events-carousel">
+            <div data-aos="fade-up" class="events-header">
                 <h2>📅 Próximos Eventos</h2>
                 <p>Participe das nossas atividades e vivencie o acolhimento em cada detalhe</p>
             </div>
@@ -179,7 +183,7 @@
             <input type="radio" name="carousel" id="s3">
             <input type="radio" name="carousel" id="s4">
 
-            <div class="carousel-wrapper">
+            <div data-aos="fade-up" class="carousel-wrapper">
                 <!-- SETA ESQUERDA ->  <label for="s1" class="carousel-btn prev-btn">❮</label>-->
                 <div class="carousel-container">
                     <div class="carousel-track">
@@ -241,7 +245,7 @@
             </div>
 
             <!-- BOLINHAS -->
-            <div class="carousel-dots">
+            <div data-aos="fade-up" class="carousel-dots">
                 <label for="s1" class="dot" id="dot1"></label>
                 <label for="s2" class="dot" id="dot2"></label>
                 <label for="s3" class="dot" id="dot3"></label>
@@ -250,16 +254,16 @@
         </section>
 
         <!-- ========== EVENTOS ANTERIORES ========== -->
-        <section class="encontros-carousel-container">
+        <section data-aos="fade-up" class="encontros-carousel-container">
             <section class="content">
-                <div class="information">
+                <div data-aos="fade-up" class="information">
                     <h2 class="section-title">Encontros Anteriores</h2>
                     <p class="section-subtitle">Relembre momentos marcantes e o que os participantes disseram</p>
                     <p style="text-align: center; font-size: .8rem; color: black;">Participe de nossos eventos abertos a
                         comunidade, e transforme seu jeito de
                         ver as coisas</p>
                 </div>
-                <div class="carousel-wrapper">
+                <div data-aos="fade-up" class="carousel-wrapper">
                     <!-- Apenas a viewport e track, sem setas -->
                     <div class="carousel-viewport">
                         <div class="carousel-track" id="carouselTrack">
@@ -269,17 +273,17 @@
                 </div>
 
                 <!-- Navegação exclusiva por dots -->
-                <div class="dots-container" id="dotsContainer"></div>
+                <div data-aos="fade-up" class="dots-container" id="dotsContainer"></div>
             </section>
         </section>
 
         <!-- ========== SEÇÃO UNIDADES ========== -->
         <section class="features" id="features">
-            <h2>Conheça nossas unidades</h2>
+            <h2 data-aos="fade-up">Conheça nossas unidades</h2>
 
-            <div class="features-grid">
+            <div data-aos="fade-up" class="features-grid">
 
-                <!-- Card 1: Unidade Centro -->
+                <!-- Card 1:-->
                 <a href="unidade-centro.html" class="feature-card"
                     style="text-decoration: none; color: inherit; display: block;">
                     <div class="feature-icon">🏛️</div>
@@ -288,7 +292,7 @@
                         10 anos com segurança e afeto.</p>
                 </a>
 
-                <!-- Card 2: Unidade Vila Mariana -->
+                <!-- Card 2:  -->
                 <a href="unidade-vila-mariana.html" class="feature-card"
                     style="text-decoration: none; color: inherit; display: block;">
                     <div class="feature-icon">🌳</div>
@@ -297,7 +301,7 @@
                         cada aluno neuroatípico.</p>
                 </a>
 
-                <!-- Card 3: Unidade Tatuapé -->
+                <!-- Card 3: -->
                 <a href="unidade-tatuape.html" class="feature-card"
                     style="text-decoration: none; color: inherit; display: block;">
                     <div class="feature-icon">🧩</div>
@@ -306,7 +310,7 @@
                         personalizados para cada criança.</p>
                 </a>
 
-                <!-- Card 4: Unidade Barra -->
+                <!-- Card 4:-->
                 <a href="unidade-barra.html" class="feature-card"
                     style="text-decoration: none; color: inherit; display: block;">
                     <div class="feature-icon">⭐</div>
@@ -319,19 +323,19 @@
         </section>
 
         <!-- ========== SEÇÃO MAPA – UNIDADES EM BELÉM (PA) ========== -->
-        <section class="map-section" id="map">
-            <div class="map-header">
+        <section data-aos="fade-up" class="map-section" id="map">
+            <div data-aos="fade-up" class="map-header">
                 <h2>📍 Encontre nossa unidade mais próxima</h2>
                 <p>Estamos em Belém com unidades estrategicamente localizadas para melhor atender sua família</p>
             </div>
 
-            <div class="map-grid">
+            <div data-aos="fade-up" class="map-grid">
                 <!-- Lista das unidades -->
                 <div class="map-list">
                     <h3>Nossas unidades em Belém</h3>
                     <ul>
                         <!-- 1. CENTRO -->
-                        <li>
+                        <li data-aos="fade-up">
                             <div class="unit-icon">🏛️</div>
                             <div class="unit-info">
                                 <strong>Unidade Centro</strong>
@@ -341,7 +345,7 @@
                             </div>
                         </li>
                         <!-- 2. TENONÉ -->
-                        <li>
+                        <li data-aos="fade-up">
                             <div class="unit-icon">🌳</div>
                             <div class="unit-info">
                                 <strong>Unidade Tenoné</strong>
@@ -351,7 +355,7 @@
                             </div>
                         </li>
                         <!-- 3. TAPANÃ -->
-                        <li>
+                        <li data-aos="fade-up">
                             <div class="unit-icon">🧩</div>
                             <div class="unit-info">
                                 <strong>Unidade Tapanã</strong>
@@ -361,7 +365,7 @@
                             </div>
                         </li>
                         <!-- 4. ICOARACI -->
-                        <li>
+                        <li data-aos="fade-up">
                             <div class="unit-icon">⭐</div>
                             <div class="unit-info">
                                 <strong>Unidade Icoaraci</strong>
@@ -374,7 +378,7 @@
                 </div>
 
                 <!-- Mapa (centralizado em Belém) -->
-                <div class="map-iframe">
+                <div data-aos="fade-up" class="map-iframe">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127682.99999999999!2d-48.54423243886361!3d-1.386532400789183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a46c4b4b4b4b4b%3A0x2d5e3a5c5c5c5c5c!2sBel%C3%A9m%2C%20State%20of%20Par%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1234567890"
                         width="100%" height="400" style="border:0; border-radius: 16px;" allowfullscreen=""
@@ -437,6 +441,10 @@
     <!--Scripts-->
     <script src="scripts/script.js"></script>
     <script src="scripts/eventos_anteriores.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
