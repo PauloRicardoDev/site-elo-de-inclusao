@@ -75,7 +75,7 @@ duvidaForm.addEventListener('submit', function (e) {
     localStorage.setItem('duvidasTEA', JSON.stringify(duvidas));
 
     // Feedback
-    alert(`Obrigado, ${nome}! Sua dúvida foi registrada e será respondida em até 30 dias.`);
+    alert(`Obrigado, ${nome}! Sua dúvida foi registrada e será respondida em até 3 dias.`);
 
     // Limpa formulário
     duvidaForm.reset();
