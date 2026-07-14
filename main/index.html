@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style/carrossel.css">
     <link rel="stylesheet" href="style/locais.css">
     <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/modal_escola.css">
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -422,45 +423,53 @@
 
             <div data-aos="fade-up" class="features-grid">
 
-                <!-- Card 1:-->
-                <a href="unidade-centro.html" class="feature-card"
-                    style="text-decoration: none; color: inherit; display: block;">
+                <!-- Cards das unidades (agora com classe e data-attributes) -->
+                <div class="feature-card unit-card" data-unit="centro"
+                    style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
                     <div class="feature-icon">🏛️</div>
                     <h3>Unidade Centro</h3>
                     <p>Estrutura completa e equipe especializada em TEA. Ambiente adaptado para acolher crianças de 6 a
                         10 anos com segurança e afeto.</p>
-                </a>
+                </div>
 
-                <!-- Card 2:  -->
-                <a href="unidade-vila-mariana.html" class="feature-card"
-                    style="text-decoration: none; color: inherit; display: block;">
+                <div class="feature-card unit-card" data-unit="tenone"
+                    style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
                     <div class="feature-icon">🌳</div>
                     <h3>Unidade Tenoné</h3>
                     <p>Espaço amplo e arejado, com salas sensoriais e metodologia adaptativa que respeita o ritmo de
                         cada aluno neuroatípico.</p>
-                </a>
+                </div>
 
-                <!-- Card 3: -->
-                <a href="unidade-tatuape.html" class="feature-card"
-                    style="text-decoration: none; color: inherit; display: block;">
+                <div class="feature-card unit-card" data-unit="tapana"
+                    style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
                     <div class="feature-icon">🧩</div>
-                    <h3>
-                        Unidade Tapanã</h3>
+                    <h3>Unidade Tapanã</h3>
                     <p>Foco no desenvolvimento emocional e pedagógico. Aqui, a inclusão é real, com projetos
                         personalizados para cada criança.</p>
-                </a>
+                </div>
 
-                <!-- Card 4:-->
-                <a href="unidade-barra.html" class="feature-card"
-                    style="text-decoration: none; color: inherit; display: block;">
+                <div class="feature-card unit-card" data-unit="icoaraci"
+                    style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
                     <div class="feature-icon">⭐</div>
                     <h3>Unidade Icoaraci</h3>
                     <p>Excelência em ensino humanizado. Corpo docente capacitado para transformar desafios em conquistas
                         diárias.</p>
-                </a>
-
+                </div>
             </div>
         </section>
+
+
+        <!-- Modal único (imagem e ações serão preenchidas pelo JS) -->
+        <div class="modal-overlay" id="schoolModalOverlay">
+            <div class="modal school-modal">
+                <button class="modal-close" id="closeSchoolModalBtn">&times;</button>
+                <img id="schoolImage" src="" alt="Estrutura da escola" class="school-image">
+                <div class="modal-actions">
+                    <button class="btn-contact" id="btnContactFromModal">Entre em contato</button>
+                    <button class="btn-more" id="btnMoreFromModal">Saiba mais</button>
+                </div>
+            </div>
+        </div>
 
         <!-- ========== SEÇÃO MAPA – UNIDADES EM BELÉM (PA) ========== -->
         <section data-aos="fade-up" class="map-section">
@@ -627,6 +636,7 @@
     </script>
 
     <script src="scripts/modal.js"></script>
+    <script src="scripts/modal_escola.js"></script>
 </body>
 
 </html>
