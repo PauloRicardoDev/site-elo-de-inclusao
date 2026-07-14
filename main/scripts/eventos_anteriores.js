@@ -1,8 +1,8 @@
 const encontros = [
     {
         "id": 1,
-        "imagem": "https://picsum.photos/seed/tea1/400/300",
-        "data": "15 de Agosto, 2026",
+        "imagem": "./assets/banner4.svg",
+        "data": "15 de Agosto, 2025",
         "titulo": "Palestra: Entendendo o TEA",
         "depoimento": "A palestra foi transformadora! Finalmente entendi como ajudar meu filho em casa. A psicopedagoga explicou de forma tão clara e acolhedora.",
         "participante": {
@@ -13,8 +13,8 @@ const encontros = [
     },
     {
         "id": 2,
-        "imagem": "https://picsum.photos/seed/tea2/400/300",
-        "data": "15 de Agosto, 2026",
+        "imagem": "./assets/banner3.svg",
+        "data": "15 de Agosto, 2025",
         "titulo": "Palestra: Entendendo o TEA",
         "depoimento": "Saí da palestra com ferramentas práticas para usar na sala de aula. A abordagem sobre comunicação não violenta foi um divisor de águas.",
         "participante": {
@@ -25,8 +25,8 @@ const encontros = [
     },
     {
         "id": 3,
-        "imagem": "https://picsum.photos/seed/artes1/400/300",
-        "data": "22 de Agosto, 2026",
+        "imagem": "./assets/banner1.svg",
+        "data": "22 de Agosto, 2025",
         "titulo": "Oficina de Artes Sensoriais",
         "depoimento": "Meu filho é autista e se encantou com as texturas e cores. A equipe soube acolher as necessidades dele com muito carinho. Foi emocionante!",
         "participante": {
@@ -37,8 +37,8 @@ const encontros = [
     },
     {
         "id": 4,
-        "imagem": "https://picsum.photos/seed/artes2/400/300",
-        "data": "22 de Agosto, 2026",
+        "imagem": "./assets/banner2.svg",
+        "data": "22 de Agosto, 2025",
         "titulo": "Oficina de Artes Sensoriais",
         "depoimento": "Eu nunca tinha visto minha filha tão focada. Ela amou pintar com as mãos e experimentar os sons. Já estamos ansiosos pela próxima!",
         "participante": {
@@ -49,8 +49,8 @@ const encontros = [
     },
     {
         "id": 5,
-        "imagem": "https://picsum.photos/seed/piquenique1/400/300",
-        "data": "05 de Setembro, 2026",
+        "imagem": "./assets/banner6.svg",
+        "data": "05 de Setembro, 2025",
         "titulo": "Piquenique da Família C.E.C.S.",
         "depoimento": "Foi lindo ver todas as famílias reunidas, sem pressa, num ambiente tão acolhedor. Me senti parte de uma comunidade de verdade.",
         "participante": {
@@ -61,8 +61,8 @@ const encontros = [
     },
     {
         "id": 6,
-        "imagem": "https://picsum.photos/seed/piquenique2/400/300",
-        "data": "05 de Setembro, 2026",
+        "imagem": "./assets/banner5.svg",
+        "data": "05 de Setembro, 2025",
         "titulo": "Piquenique da Família C.E.C.S.",
         "depoimento": "O piquenique foi um momento especial de integração. Meu marido, que trabalha muito, pôde participar e ficou encantado com a escola.",
         "participante": {
@@ -73,8 +73,8 @@ const encontros = [
     },
     {
         "id": 7,
-        "imagem": "https://picsum.photos/seed/talentos1/400/300",
-        "data": "12 de Setembro, 2026",
+        "imagem": "./assets/banner7.svg",
+        "data": "12 de Setembro, 2025",
         "titulo": "Mostra de Talentos Inclusiva",
         "depoimento": "Chorei de emoção ao ver minha filha no palco. A inclusão realmente acontece aqui. Ela se apresentou com tanta confiança!",
         "participante": {
@@ -85,8 +85,8 @@ const encontros = [
     },
     {
         "id": 8,
-        "imagem": "https://picsum.photos/seed/talentos2/400/300",
-        "data": "12 de Setembro, 2026",
+        "imagem": "./assets/banner8.svg",
+        "data": "12 de Setembro, 2025",
         "titulo": "Mostra de Talentos Inclusiva",
         "depoimento": "Ver cada aluno brilhar do seu jeito foi a prova de que a escola respeita a neurodiversidade. Saí de lá renovado como professor.",
         "participante": {
