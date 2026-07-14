@@ -1,4 +1,3 @@
-// Dados dos encontros (os mesmos, você pode personalizar)
 const encontros = [
     {
         "id": 1,
