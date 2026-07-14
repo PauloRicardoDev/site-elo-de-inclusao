@@ -222,7 +222,26 @@ nav {
 
 /* Contact Section */
 .contact {
-    padding: 4rem 5%;
+    padding: 6rem 5%;
+
+    background-image: url('../assets/banner.svg');
+    background-size: cover;
+    /* cobre toda a área */
+    background-position: center;
+    /* centraliza a imagem */
+    background-repeat: no-repeat;
+    /* não repete */
+    background-blend-mode: overlay;
+    /* mistura com a cor de fundo */
+    background-color: #c889ff;
+}
+
+.content_contact {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    max-width: 600px;
+    padding: 2rem;
+    margin: 0 auto;
 }
 
 .contact h2 {
