@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style/locais.css">
     <link rel="stylesheet" href="style/modal.css">
     <link rel="stylesheet" href="style/modal_escola.css">
+    <link rel="stylesheet" href="style/duvidas.css">
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -417,6 +418,42 @@
             </section>
         </section>
 
+        <section class="duvidas" id="duvidas">
+            <h2 data-aos="fade-up">Quadro de Dúvidas</h2>
+            <p data-aos="fade-up" class="duvidas-intro">
+                Tire suas dúvidas sobre TEA e ambiente educacional.<br>
+                Nossa escola te responde em até <strong>3 dias</strong>.
+            </p>
+
+            <!-- Formulário para enviar dúvida -->
+            <form data-aos="fade-up" id="duvidaForm" class="duvida-form">
+                <div class="form-group">
+                    <label for="duvidaNome">Seu nome</label>
+                    <input type="text" id="duvidaNome" required placeholder="Nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="duvidaEmail">E-mail para contato</label>
+                    <input type="email" id="duvidaEmail" required placeholder="seu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="duvidaTexto">Sua dúvida</label>
+                    <textarea id="duvidaTexto" rows="4" required
+                        placeholder="Descreva sua dúvida sobre TEA e educação..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar dúvida</button>
+            </form>
+
+            <!-- Área onde as dúvidas enviadas aparecerão -->
+            <div data-aos="fade-up" class="duvidas-lista" id="duvidasLista">
+                <h3>Dúvidas enviadas</h3>
+                <div id="duvidasContainer">
+                    <!-- As dúvidas serão inseridas aqui dinamicamente -->
+                    <p class="nenhuma-duvida" id="nenhumaDuvida">Nenhuma dúvida cadastrada ainda. Seja o primeiro a
+                        perguntar!</p>
+                </div>
+            </div>
+        </section>
+
         <!-- ========== SEÇÃO UNIDADES ========== -->
         <section class="features" id="features">
             <h2 data-aos="fade-up">Conheça nossas unidades</h2>
@@ -424,7 +461,7 @@
             <div data-aos="fade-up" class="features-grid">
 
                 <!-- Cards das unidades (agora com classe e data-attributes) -->
-                <div class="feature-card unit-card" data-unit="centro"
+                <div data-aos="fade-up" class="feature-card unit-card" data-unit="centro"
                     style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
                     <div class="feature-icon">🏛️</div>
                     <h3>Unidade Centro</h3>
@@ -432,7 +469,7 @@
                         10 anos com segurança e afeto.</p>
                 </div>
 
-                <div class="feature-card unit-card" data-unit="tenone"
+                <div data-aos="fade-up" class="feature-card unit-card" data-unit="tenone"
                     style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
                     <div class="feature-icon">🌳</div>
                     <h3>Unidade Tenoné</h3>
@@ -440,7 +477,7 @@
                         cada aluno neuroatípico.</p>
                 </div>
 
-                <div class="feature-card unit-card" data-unit="tapana"
+                <div data-aos="fade-up" class="feature-card unit-card" data-unit="tapana"
                     style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
                     <div class="feature-icon">🧩</div>
                     <h3>Unidade Tapanã</h3>
@@ -448,7 +485,7 @@
                         personalizados para cada criança.</p>
                 </div>
 
-                <div class="feature-card unit-card" data-unit="icoaraci"
+                <div data-aos="fade-up" class="feature-card unit-card" data-unit="icoaraci"
                     style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
                     <div class="feature-icon">⭐</div>
                     <h3>Unidade Icoaraci</h3>
@@ -457,7 +494,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- Modal único (imagem e ações serão preenchidas pelo JS) -->
         <div class="modal-overlay" id="schoolModalOverlay">
@@ -472,7 +508,7 @@
         </div>
 
         <!-- ========== SEÇÃO MAPA – UNIDADES EM BELÉM (PA) ========== -->
-        <section data-aos="fade-up" class="map-section">
+        <section class="map-section">
             <div data-aos="fade-up" class="map-header">
                 <h2>📍 Encontre nossa unidade mais próxima</h2>
                 <p>Estamos em Belém com unidades estrategicamente localizadas para melhor atender sua família</p>
@@ -637,6 +673,7 @@
 
     <script src="scripts/modal.js"></script>
     <script src="scripts/modal_escola.js"></script>
+    <script src="scripts/quadro_duvida.js"></script>
 </body>
 
 </html>
