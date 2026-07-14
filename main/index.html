@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/eventos_anteriores.css">
     <link rel="stylesheet" href="style/carrossel.css">
     <link rel="stylesheet" href="style/locais.css">
+    <link rel="stylesheet" href="style/modal.css">
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -127,7 +128,7 @@
 
                     <!-- Botão + avaliação -->
                     <div class="highlight-cta">
-                        <a href="#contato" class="btn-cta">Agende uma Visita</a>
+                        <a href="#contato" class="btn-cta" id="openModalBtn">Agende uma Visita</a>
                         <div class="cta-reviews">
                             <span class="stars">★★★★★</span>
                             <span class="review-text">Avaliação 4.9/5 · de 120+ famílias</span>
@@ -136,6 +137,60 @@
                 </div>
             </section>
         </section>
+
+        <!-- Modal -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+                <button class="modal-close" id="closeModalBtn">&times;</button>
+                <h2>Agende sua visita</h2>
+                <p>Preencha os dados abaixo e escolha a unidade que deseja conhecer.</p>
+
+                <form id="visitForm">
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone / WhatsApp</label>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="unidade">Unidade que deseja visitar</label>
+                        <select id="unidade" name="unidade" required>
+                            <option value="">Selecione uma unidade</option>
+                            <option value="centro"
+                                data-maps="https://maps.google.com/?q=Rua+Santo+Antônio,100+Belém+PA+66015-000">🌳
+                                Unidade Centro</option>
+                            <option value="tenone"
+                                data-maps="https://maps.google.com/?q=Rua+Santa+Maria,500+Tenoné+Belém+PA+66635-200">🧩
+                                Unidade Tenoné</option>
+                            <option value="tapana"
+                                data-maps="https://maps.google.com/?q=Rua+Lomas,300+Tapanã+Belém+PA+66640-100">⭐ Unidade
+                                Tapanã</option>
+                            <option value="icoaraci"
+                                data-maps="https://maps.google.com/?q=Av.+Vinte+de+Setembro,200+Icoaraci+Belém+PA+66820-000">
+                                📍 Unidade Icoaraci</option>
+                        </select>
+                    </div>
+
+
+                    <!-- Endereço da unidade selecionada -->
+                    <div class=" unidade-info" id="unidadeInfo" style="display: none;">
+                        <div class="endereco" id="enderecoTexto"></div>
+                        <a href="#" id="mapaLink" target="_blank" class="mapa-link">Ver no mapa →</a>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </form>
+            </div>
+        </div>
 
         <!-- ========== SEÇÃO VÍDEO INSTITUCIONAL ========== -->
         <section data-aos="fade-up" class="video-section" id="about">
@@ -154,7 +209,7 @@
 
                 </div>
                 <div class="video-description">
-                    <h3>Mais que uma escola, um lar de aprendizado</h3>
+
                     <p>
                         No <strong>Centro Educacional Caminhos do Saber</strong>, acreditamos que cada criança tem seu
                         próprio ritmo e potencial. Nossa metodologia adaptativa, nosso ambiente acolhedor e nossa equipe
@@ -166,7 +221,7 @@
                         <li>🏫 Estrutura preparada para inclusão</li>
                         <li>❤️ Ambiente que acolhe e desenvolve</li>
                     </ul>
-                    <a href="#contato" class="cta-button">Quero conhecer de perto</a>
+                    <h3 style="font-size: .9rem; color: blueviolet;">Mais que uma escola, um lar de aprendizado</h3>
                 </div>
             </div>
         </section>
@@ -570,6 +625,8 @@
     <script>
         AOS.init();
     </script>
+
+    <script src="scripts/modal.js"></script>
 </body>
 
 </html>
